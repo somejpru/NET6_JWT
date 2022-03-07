@@ -31,7 +31,7 @@ builder.Services
 
             ValidateAudience = false,
             ValidateLifetime = true,
-
+            //TEST
             ValidateIssuerSigningKey = false,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue<string>("JwtSettings:SignKey")))
         };
